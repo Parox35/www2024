@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Gradients properties</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Background gradients properties</h1>
+    </header>
+    <main>
+        <p>It exist three type of background gradients which are:</p>
+        <li>Linear Gradients (goes down/up/left/right/diagonally)</li>
+        <li>Radial Gradients (defined by their center)</li>
+        <li>Conic Gradients (rotated around a center point)</li>
+
+        <h3>Linear gradients</h3>
+        <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among.<br>You can also set a starting point and a direction (or an angle) along with the gradient effect.<br> To use this propertie you need to use this synthaxe:</p>
+        <i id="synthaxe">background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</i>
+        <h5>For example, if you want to do a gradient of cyan to purple going right to left:</h5>
+        <p id="linearGradientCyanPurple">background-image: linear-gradient(to right, cyan, purple)</p>
+        <h5>You can also do diagonally:</h5>
+        <p id="linearGradientRedWhite">background-image: linear-gradient(to bottom left, Red, White)</p>
+        <h5>If you want more example, you can click on this link:
+        <a href="https://www.w3schools.com/css/css3_gradients.asp">CSS Linear Gradients</a></h5>
+
+
+        <h3>Radial gradient</h3>
+        <p>A radial gradient is defined by its center with at least two color step.<br>To use this propertie you need to use this synthaxe:</p>
+        <i id="synthaxe">background-image: radial-gradient(shape size at position, start-color, ..., last-color);</i>
+        <h5>For example:</h5>
+        <p id="radialGradientCircle">background-image: radial-gradient(circle, red, yellow, green);</p>
+        <h5>It exists four size parameters to define the size of the gradient. It can take four values (closest-side, farthest-side, closest-corner, farthest-corner)</h5>
+        <div id="radialSizeParemeter"></div>
+        <h5>For more example, you can click on this link:
+        <a href="https://www.w3schools.com/css/css3_gradients_radial.asp">CSS Radial Gradients</a></h5>
+
+        <h3>Conic Gradients</h3>
+        <p>A conic gradient is a gradient with color transitions rotated around a center point.<br>
+        To use it you need at least two different color.<br>
+        To use this propertie you need to use this synthaxe:</p>
+        <i id="synthaxe">background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);</i></p>
+        <p>background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);</p>
+        <p id="ConicGradient"></p>
+    </main>
+    <footer>
+        <button onclick="window.location.href = './index.html'">Return to the CSS3 styling possibilities</button>
+    </footer>
+</body>
+</html>
