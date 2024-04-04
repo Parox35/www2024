@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Animations
+        </h1>
+    </header>
+    <main>
+        <p>With CSS you can do some animation without javascript with this properties:</p>
+        <li>@keyframes</li>
+        <li>animation-name</li>
+        <li>animation-duration</li>
+        <li>animation-delay</li>
+        <li>animation-iteration-count</li>
+        <li>animation-direction</li>
+        <li>animation-timing-function</li>
+        <li>animation-fill-mode</li>
+        <li>animation</li>
+
+        <h3>@keyframes</h3>
+        <p>When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+
+        To get an animation to work, you must bind the animation to an element.</p>
+        <h5>Change the background of a div in four time</h5>
+        <p>To apply an animation you need to use the propertie animation-duration to see a modification and the propertie animation-name with the name of the animation in the keyframes you give.</p>
+        <i id="synthaxe">
+        @keyframes backgroundAnimation{<br>
+            0% {background-image: linear-gradient(to bottom right, white, red);}<br>
+            25% {background-image: linear-gradient(to bottom right, red, blue);}<br>
+            50%{background-image: linear-gradient(to bottom right, blue, yellow);}<br>
+            100% {background-image: linear-gradient(to bottom right, yellow, green);}<br>
+        }<br>
+        <br>
+        #animationDIV{
+            width: 100px;<br>
+            height: 100px;<br>
+            margin: 1%;<br>
+            animation-name: backgroundAnimation infinite;<br>
+            animation-duration: 4s;<br>
+            animation-iteration-count: infinite;<br>
+        }
+        </i>
+        <div id="animationDIV"></div>
+
+        <h5>More example: <a href="https://www.w3schools.com/css/css3_animations.asp">CSS Animations</a></h5>
+    </main>
+    <footer>
+        <button onclick="window.location.href = './index.html'">Return to the CSS3 styling possibilities</button>
+    </footer>
+</body>
+</html>
