@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Transitions properties
+        </h1>
+    </header>
+    <main>
+        <p>
+            CSS transitions allows you to change property values smoothly, over a given duration.<br>
+            There is multiple properties like:
+        </p>
+        <li>transition</li>
+        <li>transition-delay</li>
+        <li>transition-duration</li>
+        <li>transition-property</li>
+        <li>transition-timing-function</li>
+        <p>We will just show the transition propertie.</p>
+        <h5>If you want some example from the other properties: <a href="https://www.w3schools.com/css/css3_transitions.asp">CSS Transitions</a></h5>
+        
+        <h3>Transition propertie</h3>
+        <p>To use this propertie you need to specify to things: 
+            <li>The effect you want</li>
+            <li>The duration of this effect</li>    
+        </p>
+        <i id="synthaxe">transition: property to effect, delay;</i>
+        <h5>For example grow a div from 100px*100px to 200px*200px:</h5>
+        <i>transition: width 2s, height 2s;</i>
+        <div id="transitionDiv"></div>
+    </main>
+    <footer>
+        <button onclick="window.location.href = './index.html'">Return to the CSS3 styling possibilities</button>
+    </footer>
+</body>
+</html>

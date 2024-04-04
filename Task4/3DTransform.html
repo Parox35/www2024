@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transformations</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>3D Transformations</h1>
+    </header>
+    <main>
+        <p>The properties of 3D Transformations are:
+            <li>transform: Applies a 2D or 3D transformation to an element</li>
+            <li>transform-origin: Allows you to change the position on transformed elements</li>
+            <li>transform-style	-> Specifies how nested elements are rendered in 3D space</li>
+            <li>perspective	-> Specifies the perspective on how 3D elements are viewed</li>
+            <li>perspective-origin -> Specifies the bottom position of 3D elements</li>
+            <li>backface-visibility -> Defines whether or not an element should be visible when not facing the screen</li><br>
+
+            Transform properties had also 14 methods which some of them are the same than 2D transform but with a third parameter z:
+        </p>
+        <li>matrix3d
+            (n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n) -> Defines a 3D transformation, using a 4x4 matrix of 16 values
+        </li>
+
+        <li>translate3d(x,y,z) -> Defines a 3D translation</li>
+        <div id="translatetransfo3" class="marge">transform: translate3d(10deg, -10deg, 5deg);</div>
+
+        <li>translateX(x) -> Defines a 3D translation, using only the value for the X-axis</li>
+        <li>translateY(y) -> Defines a 3D translation, using only the value for the Y-axis</li>
+        <li>translateZ(z) -> Defines a 3D translation, using only the value for the Z-axis</li>
+
+        <li>scale3d(x,y,z) -> Defines a 3D scale transformation</li>
+        <div id="scaletransfo" class="marge">transform: scale3d(10deg, -10deg, 5deg);</div>
+
+        <li>scaleX(x) -> Defines a 3D scale transformation by giving a value for the X-axis</li>
+        <li>scaleY(y) -> Defines a 3D scale transformation by giving a value for the Y-axis</li>
+        <li>scaleZ(z) -> Defines a 3D scale transformation by giving a value for the Z-axis</li>
+
+        <li>rotate3d(x,y,z,angle) -> Defines a 3D rotation</li>
+        <div id="rotateTransfo" class="marge">transform: rotate3D(5deg,5deg,5deg, -90deg);</div>
+
+        <li>rotateX(angle) -> Defines a 3D rotation along the X-axis</li>
+        <li>rotateY(angle) -> Defines a 3D rotation along the Y-axis</li>
+        <li>rotateZ(angle) -> Defines a 3D rotation along the Z-axis</li>
+
+        <li>perspective(n) -> Defines a perspective view for a 3D transformed element</li>
+        <div id="transfoPerspective" class="marge">transform: perspective(5deg);</div>
+
+        <h5>More example: <a href="https://www.w3schools.com/css/css3_3dtransforms.asp">3D Transforms</a></h5>
+    </main>
+    <footer>
+        <button onclick="window.location.href = './index.html'">Return to the CSS3 styling possibilities</button>
+    </footer>
+</body>
+</html>

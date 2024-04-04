@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transformations Properties</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>2D Transformations Properties</h1>
+    </header>
+    <main>
+        <p>It exists two properties which are:
+            <li>transform: Applies a 2D or 3D transformation to an element</li>
+            <li>transform-origin: Allows you to change the position on transformed elements</li><br>
+
+            Transform properties had also 11 methods:
+            <li>matrix(n,n,n,n,n,n) -> Defines a 2D transformation, using a matrix of six values</li>
+
+            <div id="transformMatrix" class="marge">transform: matrix(1, -0.3, 0, 1, 0, 0);</div>
+
+            <li>translate(x,y) -> Defines a 2D translation, moving the element along the X- and the Y-axis</li>
+            <div id="translateXY" class="marge">transform: translate(50px, 10px);</div>
+
+            <li>translateX(n) -> Defines a 2D translation, moving the element along the X-axis</li>
+            <div id="transformTranslateX" class="marge">transform: translateX(50px);</div>
+
+            <li>translateY(n) -> Defines a 2D translation, moving the element along the Y-axis</li>
+            <div id="transformTranslateY" class="marge">transform: translateY(20px);</div>
+
+            <li>scale(x,y) -> Defines a 2D scale transformation, changing the elements width and height</li>
+            <div id="transformScaleXY" class="marge">transform: scale(0.5,0.5);</div>
+
+            <li>scaleX(n) -> Defines a 2D scale transformation, changing the element's width</li>
+            <div id="transformScaleX" class="marge">transform: scaleX(0.5);</div>
+
+            <li>scaleY(n) -> Defines a 2D scale transformation, changing the element's height</li>
+            <div id="transformScaleY" class="marge">transform: scaleY(0.5);</div>
+
+            <li>rotate(angle) -> Defines a 2D rotation, the angle is specified in the parameter</li>
+            <div id="transformRotate" class="marge"> transform: rotate(-10deg);</div>
+
+            <li>skew(x-angle,y-angle) -> Defines a 2D skew transformation along the X- and the Y-axis</li>
+            <div id="transformSkewXY" class="marge">transform: skew(-10deg,10deg);</div>
+
+            <li>skewX(angle) -> Defines a 2D skew transformation along the X-axis</li>
+            <div id="transformSkewX" class="marge">transform: skewX(-10deg);</div>
+
+            <li>skewY(angle) -> Defines a 2D skew transformation along the Y-axis</li>
+            <div id="transformSkewY" class="marge">transform: skewY(10deg);</div>
+        </p>
+        <h5>More example: <a href="https://www.w3schools.com/css/css3_2dtransforms.asp">2D Transforms</a></h5>
+    </main>
+    <footer>
+        <button onclick="window.location.href = './index.html'">Return to the CSS3 styling possibilities</button>
+    </footer>
+</body>
+</html>
