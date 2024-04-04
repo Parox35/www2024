@@ -1,0 +1,186 @@
+span{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+div{
+    border: 1px solid;
+    text-align: center;
+    padding: 5%;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#synthaxe{
+    border: 1px black solid;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px 12px gray;
+}
+
+/*
+*   Background Gradients properties
+*/
+
+#linearGradientCyanPurple{
+    background-image: linear-gradient(to right, cyan, purple);
+    padding: 2%;
+}
+
+#linearGradientRedWhite{
+    background-image: linear-gradient(to bottom left, Red, White);
+    padding: 2%;
+}
+
+#radialGradientCircle{
+    background-image: radial-gradient(circle, red, yellow, green);
+    padding: 2%;
+}
+
+#radialSizeParemeter{
+    background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+}
+
+#ConicGradient{
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    padding: 2%;
+}
+
+/*
+* Shadows properties
+*/
+
+#textShadow{
+    text-shadow: 2px 2px 5px cyan;
+}
+
+#boxShadow{
+    box-shadow: 10px 10px 5px 12px lightblue;
+    padding: 2%;
+}
+
+#boxShadowInset{
+    box-shadow: 10px 10px 5px 12px lightblue inset;
+    padding: 2%;
+}
+
+/*
+*   2D transform
+*/
+
+.marge{
+    margin: 10% 0;
+}
+
+#transformMatrix{
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    width: 50px;
+    height: 10px;
+}
+
+#translateXY{
+    transform: translate(50px, 10px);
+}
+
+#transformTranslateX{
+    transform: translateX(50px);
+}
+
+#transformTranslateY{
+    transform: translateY(20px);
+}
+
+#transformScaleXY{
+    transform: scale(0.5, 0.5);
+}
+
+#transformScaleX{
+    transform: scaleX(0.5);
+}
+
+#transformScaleY{
+    transform: scaleY(0.5);
+}
+
+#transformRotate{
+    transform: rotate(-10deg);
+}
+
+#transformSkewXY{
+    transform: skew(-10deg,10deg);
+}
+
+#transformSkewX{
+    transform: skewX(-10deg);
+}
+
+#transformSkewY{
+    transform: skewY(10deg);
+}
+
+/*
+*   3D Transfomation
+*/
+
+#transfoPerspective{
+    transform: perspective(5deg);
+}
+
+#rotateTransfo{
+    transform: rotate3D(5deg,5deg,5deg, -90deg);
+}
+
+#scaletransfo{
+    transform: scale3d(10deg, -10deg, 5deg);
+}
+
+#translatetransfo3{
+    transform: perspective(500px) translate3d(10deg, -10deg, 5deg);
+}
+
+/*
+*   Transitions properties
+*/
+
+#transitionDiv{
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s;
+    background-image: linear-gradient(to bottom right, white, red);
+    margin: 1%;
+}
+
+#transitionDiv:hover{
+    width: 200px;
+    height: 200px;
+}
+
+/*
+*   Animation
+*/
+
+@keyframes backgroundAnimation{
+    0% {background-image: linear-gradient(to bottom right, white, red);}
+    25% {background-image: linear-gradient(to bottom right, red, blue);}
+    50%{background-image: linear-gradient(to bottom right, blue, yellow);}
+    100% {background-image: linear-gradient(to bottom right, yellow, green);}
+}
+
+#animationDIV{
+    width: 100px;
+    height: 100px;
+    margin: 1%;
+    animation-name: backgroundAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/*
+*   Multi-column
+*/
+
+#multiCol{
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 1px solid lightblue;
+}
