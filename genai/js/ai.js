@@ -6,13 +6,13 @@ aiButton.onclick = async function (event) {
     const text = inputText.value;
     console.log("user typed: ", text);
 
-    const url = "https://gaic23-openai.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2024-02-15-preview";
+    const url = "";                         //<- Put url Endpoint
 
     await fetch(url, {
         method: "POST",
         headers: {
-            'Content-Type': 'application/json',
-            'api-key': '442e593e0f4a4f0888523084c6ed91d4'
+            'Content-Type': 'application/json', 
+            'api-key': ''                           //<-Add Open AI API Key  (text generation):
         },
         body: JSON.stringify(
             {
@@ -55,13 +55,13 @@ askImageButton.onclick = async function (event) {
     const text = imginput.value;
     console.log("user typed: ", text);
 
-    const url = "https://gaib2024-oai.openai.azure.com/openai/deployments/Dalle3/images/generations?api-version=2024-02-01";
+    const url = "";         // <- Put the url Endpoint
 
     await fetch(url, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
-            'api-key': 'fb1de2970b384874b9761e8445348270'
+            'api-key': ''                               //<-Add Open AI API Key (Image generation)
         },
         body: JSON.stringify(
             {
